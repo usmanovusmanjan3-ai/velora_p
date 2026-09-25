@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>6-sinf tarix — 100 ta quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">🏺</div>
+
+            <div>
+                <h1>6-sinf Qadimgi dunyo tarixi</h1>
+                <p>Interaktiv 100 savollik quiz</p>
+            </div>
+        </header>
+
+
+        <!-- BOSHLASH -->
+        <section id="start-screen" class="card">
+
+            <div class="big-icon">📚</div>
+
+            <h2>Tarix bilimlaringni sinab ko‘r!</h2>
+
+            <p class="intro">
+                2022-yilgi 6-sinf “Qadimgi dunyo tarixi”
+                darsligi mavzulari asosida tuzilgan
+                100 ta savollik interaktiv test.
+            </p>
+
+
+            <div class="info">
+
+                <div class="info-item">
+                    <span>📝</span>
+                    <b id="total-question-info">100</b>
+                    <small>ta savol</small>
+                </div>
+
+                <div class="info-item">
+                    <span>🏆</span>
+                    <b>100</b>
+                    <small>maksimal ball</small>
+                </div>
+
+                <div class="info-item">
+                    <span>🎯</span>
+                    <b>1</b>
+                    <small>savol = 1 ball</small>
+                </div>
+
+            </div>
+
+
+            <button id="start-btn" class="main-btn">
+                🚀 Quizni boshlash
+            </button>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz-screen" class="card hidden">
+
+            <div class="quiz-header">
+
+                <span id="question-number">
+                    Savol 1 / 100
+                </span>
+
+                <span id="score">
+                    Ball: 0
+                </span>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+            <div class="progress-box">
+                <div id="progress-bar"></div>
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-icon">
+                    🏺
+                </div>
+
+                <h2 id="question">
+                    Savol
+                </h2>
+
+            </div>
+
+
+            <!-- JAVOBLAR -->
+            <div id="answers" class="answers"></div>
+
+
+            <button id="next-btn" class="next-btn hidden">
+                Keyingi savol →
+            </button>
+
+        </section>
+
+
+        <!-- NATIJA -->
+        <section id="result-screen" class="card hidden">
+
+            <div class="result-icon">
+                🏆
+            </div>
+
+            <h2>Quiz tugadi!</h2>
+
+            <div class="final-score">
+                <span id="final-score">0</span>
+                <small>/ 100</small>
+            </div>
+
+
+            <div id="result-message" class="result-message">
+                Natija
+            </div>
+
+
+            <div class="result-details">
+
+                <div>
+                    <span class="green">✓</span>
+                    <b id="correct-count">0</b>
+                    <small>To‘g‘ri</small>
+                </div>
+
+                <div>
+                    <span class="red">✕</span>
+                    <b id="wrong-count">0</b>
+                    <small>Noto‘g‘ri</small>
+                </div>
+
+            </div>
+
+
+            <button id="restart-btn" class="main-btn">
+                🔄 Qaytadan boshlash
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        🏺 6-sinf Qadimgi dunyo tarixi — Interaktiv Quiz
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
